@@ -21,11 +21,11 @@ int main(void)
 	int num;
 
 	scanf("%d", &num);
-	printf("You guessed: %d\n", num);
+	printf("OK! You guessed: %d\n", num);
 	printf("The correct answer is %d\n", randomNum);
 	if (num == randomNum)
 	{
-		printf("Yes! You won!\n");
+		printf("Yikes!! You won!\n");
 	}
 	else
 	{
