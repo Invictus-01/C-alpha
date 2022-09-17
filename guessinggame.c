@@ -21,6 +21,8 @@ int main(void)
 	int num;
 
 	scanf("%d", &num);
+	printf("You guessed: %d\n", num);
+	printf("The correct answer is %d\n", randomNum);
 	if (num == randomNum)
 	{
 		printf("Yes! You won!\n");
@@ -29,5 +31,6 @@ int main(void)
 	{
 		printf("Ooops! You lost, Try again.\n");
 	}
+	printf("Thank you for playing\n");
 	return (0);
 }
