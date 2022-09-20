@@ -21,15 +21,25 @@ int main(void)
 	int num;
 
 	scanf("%d", &num);
-	printf("OK! You guessed: %d\n", num);
-	printf("The correct answer is %d\n", randomNum);
-	if (num == randomNum)
+	while (num <= maxNum)
 	{
-		printf("Yikes!! You won!\n");
+		if (num == randomNum)
+		{
+			printf("Yikes!! You won!\n");
+			printf("You guessed: %d\n", num);
+			printf("The correct answer is %d\n", randomNum);
+		}
+		else
+		{
+			printf("Ooops! You lost, Try again.\n");
+			printf("You guessed: %d\n", num);
+			printf("The correct answer is %d\n", randomNum);
+		}
+	break;
 	}
-	else
+	if (num > maxNum)
 	{
-		printf("Ooops! You lost, Try again.\n");
+		printf("Hold on! That's a wrong number. Choose from 0 to %d\n", maxNum);
 	}
 	printf("Thank you for playing\n");
 	return (0);
